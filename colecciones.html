@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colecciones - El Aureum</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="bg-stone-50 text-stone-900">
+    
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-stone-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-serif font-bold text-stone-900">El Aureum</h1>
+                    <span class="ml-3 text-sm text-stone-600 hidden sm:block">Museo de Arte</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-stone-600 hover:text-stone-900 transition">Inicio</a>
+                    <a href="colecciones.html" class="text-stone-900 font-medium border-b-2 border-amber-600 pb-1">Colecciones</a>
+                    <a href="visitar.html" class="text-stone-600 hover:text-stone-900 transition">Visitar</a>
+                </div>
+                <button class="md:hidden text-stone-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-5xl font-serif font-bold mb-4">Nuestras Colecciones</h2>
+            <p class="text-xl text-stone-600 max-w-3xl mx-auto">
+                Explora obras maestras que abarcan desde el Renacimiento hasta el arte contemporáneo
+            </p>
+        </div>
+    </section>
+
+    <!-- Filtros -->
+    <section class="py-8 px-4 bg-stone-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="px-6 py-2 bg-amber-600 text-white rounded-full font-medium">Todas</button>
+                <button class="px-6 py-2 bg-white text-stone-700 rounded-full font-medium hover:bg-stone-200 transition">Renacimiento</button>
+                <button class="px-6 py-2 bg-white text-stone-700 rounded-full font-medium hover:bg-stone-200 transition">Impresionismo</button>
+                <button class="px-6 py-2 bg-white text-stone-700 rounded-full font-medium hover:bg-stone-200 transition">Contemporáneo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Obras -->
+    <section class="py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Obra 1 -->
+                <div class="bg-white rounded-sm shadow-sm overflow-hidden group cursor-pointer">
+                    <div class="relative overflow-hidden">
+                        <img src="/images/monalisa.webp" 
+                             alt="La Mona Lisa" 
+                             class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-linear-to-t from-stone-900/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="text-sm">Renacimiento</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">La Mona Lisa</h3>
+                        <p class="text-stone-600 text-sm mb-1">Leonardo da Vinci</p>
+                        <p class="text-stone-500 text-sm">1503-1519 • Óleo sobre tabla</p>
+                    </div>
+                </div>
+
+                <!-- Obra 2 -->
+                <div class="bg-white rounded-sm shadow-sm overflow-hidden group cursor-pointer">
+                    <div class="relative overflow-hidden">
+                        <img src="/images/nocheestrellada.webp" 
+                             alt="La Noche Estrellada" 
+                             class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-linear-to-t from-stone-900/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="text-sm">Postimpresionismo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">La Noche Estrellada</h3>
+                        <p class="text-stone-600 text-sm mb-1">Vincent van Gogh</p>
+                        <p class="text-stone-500 text-sm">1889 • Óleo sobre lienzo</p>
+                    </div>
+                </div>
+
+                <!-- Obra 3 -->
+                <div class="bg-white rounded-sm shadow-sm overflow-hidden group cursor-pointer">
+                    <div class="relative overflow-hidden">
+                        <img src="/images/nenufares.webp" 
+                             alt="Nenúfares" 
+                             class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-linear-to-t from-stone-900/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="text-sm">Impresionismo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Nenúfares</h3>
+                        <p class="text-stone-600 text-sm mb-1">Claude Monet</p>
+                        <p class="text-stone-500 text-sm">1920 • Óleo sobre lienzo</p>
+                    </div>
+                </div>
+
+                <!-- Obra 4 -->
+                <div class="bg-white rounded-sm shadow-sm overflow-hidden group cursor-pointer">
+                    <div class="relative overflow-hidden">
+                        <img src="/images/botticelli-venus.webp" 
+                             alt="El Nacimiento de Venus" 
+                             class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-linear-to-t from-stone-900/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="text-sm">Renacimiento</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">El Nacimiento de Venus</h3>
+                        <p class="text-stone-600 text-sm mb-1">Sandro Botticelli</p>
+                        <p class="text-stone-500 text-sm">1485 • Témpera sobre lienzo</p>
+                    </div>
+                </div>
+
+                <!-- Obra 5 -->
+                <div class="bg-white rounded-sm shadow-sm overflow-hidden group cursor-pointer">
+                    <div class="relative overflow-hidden">
+                        <img src="/images/elgrito-munch.webp" 
+                             alt="El Grito" 
+                             class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-linear-to-t from-stone-900/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="text-sm">Expresionismo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">El Grito</h3>
+                        <p class="text-stone-600 text-sm mb-1">Edvard Munch</p>
+                        <p class="text-stone-500 text-sm">1893 • Óleo y pastel sobre cartón</p>
+                    </div>
+                </div>
+
+                <!-- Obra 6 -->
+                <div class="bg-white rounded-sm shadow-sm overflow-hidden group cursor-pointer">
+                    <div class="relative overflow-hidden">
+                        <img src="/images/persistencia-dela-memoria.webp" 
+                             alt="La Persistencia de la Memoria" 
+                             class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-linear-to-t from-stone-900/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="text-sm">Surrealismo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">La Persistencia de la Memoria</h3>
+                        <p class="text-stone-600 text-sm mb-1">Salvador Dalí</p>
+                        <p class="text-stone-500 text-sm">1931 • Óleo sobre lienzo</p>
+                    </div>
+                </div>
+
+                <!-- Obra 7 -->
+                <div class="bg-white rounded-sm shadow-sm overflow-hidden group cursor-pointer">
+                    <div class="relative overflow-hidden">
+                        <img src="/images/guernica.webp" 
+                             alt="Guernica" 
+                             class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-linear-to-t from-stone-900/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="text-sm">Cubismo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Guernica</h3>
+                        <p class="text-stone-600 text-sm mb-1">Pablo Picasso</p>
+                        <p class="text-stone-500 text-sm">1937 • Óleo sobre lienzo</p>
+                    </div>
+                </div>
+
+                <!-- Obra 8 -->
+                <div class="bg-white rounded-sm shadow-sm overflow-hidden group cursor-pointer">
+                    <div class="relative overflow-hidden">
+                        <img src="/images/Baile-en-el-Moulin-de-la-Galette.webp" 
+                             alt="Baile en el Moulin de la Galette" 
+                             class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-linear-to-t from-stone-900/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="text-sm">Impresionismo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Baile en el Moulin de la Galette</h3>
+                        <p class="text-stone-600 text-sm mb-1">Pierre-Auguste Renoir</p>
+                        <p class="text-stone-500 text-sm">1876 • Óleo sobre lienzo</p>
+                    </div>
+                </div>
+
+                <!-- Obra 9 -->
+                <div class="bg-white rounded-sm shadow-sm overflow-hidden group cursor-pointer">
+                    <div class="relative overflow-hidden">
+                        <img src="/images/creacion-deadan.webp" 
+                             alt="La Creación de Adán" 
+                             class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-linear-to-t from-stone-900/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="text-sm">Renacimiento</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">La Creación de Adán</h3>
+                        <p class="text-stone-600 text-sm mb-1">Miguel Ángel</p>
+                        <p class="text-stone-500 text-sm">1512 • Fresco</p>
+                    </div>
+                </div>
+
+                <!-- Obra 10 -->
+                <div class="bg-white rounded-sm shadow-sm overflow-hidden group cursor-pointer">
+                    <div class="relative overflow-hidden">
+                        <img src="/images/composicionviii.webp" 
+                             alt="Composición VIII" 
+                             class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-linear-to-t from-stone-900/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="text-sm">Abstracto</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Composición VIII</h3>
+                        <p class="text-stone-600 text-sm mb-1">Wassily Kandinsky</p>
+                        <p class="text-stone-500 text-sm">1923 • Óleo sobre lienzo</p>
+                    </div>
+                </div>
+
+                <!-- Obra 11 -->
+                <div class="bg-white rounded-sm shadow-sm overflow-hidden group cursor-pointer">
+                    <div class="relative overflow-hidden">
+                        <img src="/images/las-meninas.webp" 
+                             alt="Las Meninas" 
+                             class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-linear-to-t from-stone-900/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="text-sm">Barroco</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">Las Meninas</h3>
+                        <p class="text-stone-600 text-sm mb-1">Diego Velázquez</p>
+                        <p class="text-stone-500 text-sm">1656 • Óleo sobre lienzo</p>
+                    </div>
+                </div>
+
+                <!-- Obra 12 -->
+                <div class="bg-white rounded-sm shadow-sm overflow-hidden group cursor-pointer">
+                    <div class="relative overflow-hidden">
+                        <img src="/images/la-joven-dela-perla.webp" 
+                             alt="La Joven de la Perla" 
+                             class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-linear-to-t from-stone-900/80 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-4 left-4 text-white">
+                                <p class="text-sm">Barroco</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold mb-2">La Joven de la Perla</h3>
+                        <p class="text-stone-600 text-sm mb-1">Johannes Vermeer</p>
+                        <p class="text-stone-500 text-sm">1665 • Óleo sobre lienzo</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 bg-amber-50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-serif font-bold mb-4">¿Te gustaría ver estas obras en persona?</h2>
+            <p class="text-stone-600 mb-8">Reserva tu visita guiada y descubre los detalles que hacen únicas a estas obras maestras</p>
+            <a href="visitar.html" class="inline-block bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-sm font-medium transition">
+                Reservar Visita
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-300 py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white font-serif font-bold text-xl mb-4">El Aureum</h3>
+                    <p class="text-sm">Museo de Arte</p>
+                    <p class="text-sm mt-2">Inspirando mentes a través del arte</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Horarios</h4>
+                    <p class="text-sm">Martes a Domingo</p>
+                    <p class="text-sm">10:00 - 18:00</p>
+                    <p class="text-sm mt-2 text-stone-400">Cerrado los lunes</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Contacto</h4>
+                    <p class="text-sm">Av. Bien-Lejos 240</p>
+                    <p class="text-sm">San Miguel II</p>
+                    <p class="text-sm">Lagos de Moreno, Jalisco</p>
+                    <p class="text-sm">contacto@aureum.mx</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-amber-500 transition">Facebook</a>
+                        <a href="#" class="hover:text-amber-500 transition">Instagram</a>
+                        <a href="#" class="hover:text-amber-500 transition">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-stone-800 mt-8 pt-8 text-center text-sm text-stone-400">
+                <p>&copy; 2025 El Aureum. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
