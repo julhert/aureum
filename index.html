@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Aureum</title>
+  <link rel="stylesheet" crossorigin href="/aureum/assets/index-Bd-DuwMm.css">
+</head>
+<body class="bg-stone-50 text-stone-900">
+    
+    <nav class="bg-white border-b border-stone-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-serif font-bold text-stone-900">El Aureum</h1>
+                    <span class="ml-3 text-sm text-stone-600 hidden sm:block">Museo de Arte</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-stone-900 font-medium border-b-2 border-amber-600 pb-1">Inicio</a>
+                    <a href="colecciones.html" class="text-stone-600 hover:text-stone-900 transition">Colecciones</a>
+                    <a href="visitar.html" class="text-stone-600 hover:text-stone-900 transition">Visitar</a>
+                </div>
+                <button class="md:hidden text-stone-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative h-[70vh] bg-stone-900 overflow-hidden">
+        <div class="absolute inset-0 bg-linear-to-b from-transparent to-stone-900/60"></div>
+        <img src="images/hero.jpg" 
+             alt="Museo" 
+             class="w-full h-full object-cover opacity-80">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center text-white px-4">
+                <h2 class="text-5xl md:text-7xl font-serif font-bold mb-4">El Aureum</h2>
+                <p class="text-xl md:text-2xl mb-8 text-stone-200">Donde el arte cobra vida</p>
+                <a href="colecciones.html" 
+                   class="inline-block bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-sm font-medium transition">
+                    Explorar Colecciones
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Horarios</h3>
+                    <p class="text-stone-600">Martes a Domingo<br>10:00 - 18:00</p>
+                    <p class="text-sm text-stone-500 mt-2">Cerrado los lunes</p>
+                </div>
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Ubicación</h3>
+                    <p class="text-stone-600">Av. Bien-Lejos 240<br>San Miguel II</p>
+                    <p class="text-sm text-stone-500 mt-2">Lagos de Moreno, Jalisco</p>
+                </div>
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Entrada</h3>
+                    <p class="text-stone-600">General: $120<br>Estudiantes: $60</p>
+                    <p class="text-sm text-stone-500 mt-2">Domingos entrada libre</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-serif font-bold text-center mb-12">Exposición del Mes</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800" 
+                             alt="Exposición" 
+                             class="w-full h-96 object-cover rounded-sm shadow-lg">
+                </div>
+                <div>
+                    <span class="text-amber-600 font-medium text-sm uppercase tracking-wide">Hasta Noviembre 2025</span>
+                    <h3 class="text-3xl font-serif font-bold mt-2 mb-4">El Arte del Impresionismo</h3>
+                    <p class="text-stone-600 leading-relaxed mb-6">
+                        Descubre la magia del movimiento impresionista a través de obras maestras de Monet, Renoir y Degas. 
+                        Una colección única que captura la luz y el color de una era transformadora en el arte.
+                    </p>
+                    <p class="text-stone-600 leading-relaxed mb-6">
+                        Esta exposición temporal reúne más de 40 pinturas prestadas por los principales museos de Europa, 
+                        ofreciendo una experiencia inmersiva en el París del siglo XIX.
+                    </p>
+                    <a href="colecciones.html" class="text-amber-600 font-medium hover:text-amber-700 inline-flex items-center">
+                        Ver obras de la exposición
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-serif font-bold text-center mb-12">Lo que dicen nuestros visitantes</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-sm shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+                            <span class="text-amber-600 font-bold">MR</span>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">María Rodríguez</h4>
+                            <div class="flex text-amber-500">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-stone-600 italic">
+                        "Una experiencia cultural incomparable. Las colecciones son impresionantes y el personal es muy amable."
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-sm shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+                            <span class="text-amber-600 font-bold">JG</span>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Juan García</h4>
+                            <div class="flex text-amber-500">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-stone-600 italic">
+                        "El museo está perfectamente curado. Cada sala es un viaje a través del tiempo y el arte."
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-sm shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+                            <span class="text-amber-600 font-bold">AL</span>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Ana López</h4>
+                            <div class="flex text-amber-500">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-stone-600 italic">
+                        "Visita obligada si estás en la ciudad. Las exposiciones temporales son siempre fascinantes."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-stone-300 py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white font-serif font-bold text-xl mb-4">El Aureum</h3>
+                    <p class="text-sm mt-2">Inspirando mentes a través del arte</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Horarios</h4>
+                    <p class="text-sm">Martes a Domingo</p>
+                    <p class="text-sm">10:00 - 18:00</p>
+                    <p class="text-sm mt-2 text-stone-400">Cerrado los lunes</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Contacto</h4>
+                    <p class="text-sm">Av. Bien-Lejos 240</p>
+                    <p class="text-sm">San Miguel II</p>
+                    <p class="text-sm">Lagos de Moreno, Jalisco</p>
+                    <p class="text-sm mt-2">contacto@aureum.mx</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-amber-500 transition">Facebook</a>
+                        <a href="#" class="hover:text-amber-500 transition">Instagram</a>
+                        <a href="#" class="hover:text-amber-500 transition">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-stone-800 mt-8 pt-8 text-center text-sm text-stone-400">
+                <p>&copy; 2025 El Aureum. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
